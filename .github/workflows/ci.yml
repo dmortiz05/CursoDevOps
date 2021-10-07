@@ -8,11 +8,11 @@ on:
         required: true
         default: 'N/A'
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'apis/poi/**'
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     paths:    
       - 'apis/poi/**'
       - '.github/workflows/dotnet.yml'
