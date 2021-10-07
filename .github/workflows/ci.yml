@@ -16,3 +16,17 @@ on:
     paths:    
       - 'apis/poi/**'
       - '.github/workflows/dotnet.yml'
+env:
+  ACR_URL: 'openhackxqzxmauhbxtiiacr.azurecr.io'
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest  
+    
+    steps:
+        - uses: actions/checkout@v2
+        - name: Setup .NET
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: 2.1.x    
