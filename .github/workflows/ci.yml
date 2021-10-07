@@ -79,6 +79,6 @@ jobs:
       - name: Invoke 'POI CD' workflow with inputs
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: API POI CD
+          workflow: API-POI-CD
           token: ${{ secrets.ACTIONS_PAT }}
           inputs: '{ "reason": "Fired by API POI CI Worflow." }'
